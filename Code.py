@@ -24,3 +24,13 @@ class Parc:
             print("Voiture ajouter avec succes")
 
 
+    def sortir_voiture(self,voiture):
+        if voiture not in self.liste_voiture:
+            print("Voiture non trouvée dans le parc")
+        else:
+            self.liste_voiture.remove(voiture)
+            print(f"Voiture retirée")
+            print(f"Places libre:", self.compterNombrePlace())
+    def compterNombrePlace(self):
+        cap = self.capacite - len(self.liste_voiture)
+        return cap
