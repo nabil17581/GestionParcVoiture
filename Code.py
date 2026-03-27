@@ -7,4 +7,9 @@ class Voiture:
         print(f'marque: {self.marque}, couleur: {self.couleur}, matricule: {self.matricule}')
 
 
-
+class Parc:
+    def __init__(self,identifiant,adresse,capacite):
+        self.identifiant = identifiant
+        self.adresse = adresse
+        self.capacite = capacite
+        self.liste_voiture = []
