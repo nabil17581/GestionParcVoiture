@@ -31,6 +31,9 @@ class Parc:
             self.liste_voiture.remove(voiture)
             print(f"Voiture retirée")
             print(f"Places libre:", self.compterNombrePlace())
+
     def compterNombrePlace(self):
         cap = self.capacite - len(self.liste_voiture)
         return cap
+
+
