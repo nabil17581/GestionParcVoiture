@@ -36,4 +36,10 @@ class Parc:
         cap = self.capacite - len(self.liste_voiture)
         return cap
 
+parc=Parc("parc-1004","Toronto",3)
+voiture1=Voiture("CX5 RTX","Honda Civic","Noire")
+voiture2=Voiture("GHY DZA","Toyota Corolla","Rouge")
+voiture3=Voiture("2CB CRB","Dodge Caravan","Rouge")
+voiture4=Voiture("JSK 6YH","Kia Rio","Gris")
+
 
