@@ -43,3 +43,10 @@ voiture3=Voiture("2CB CRB","Dodge Caravan","Rouge")
 voiture4=Voiture("JSK 6YH","Kia Rio","Gris")
 
 
+parc.entrer_voiture(voiture1)
+parc.entrer_voiture(voiture2)
+parc.entrer_voiture(voiture3)
+parc.entrer_voiture(voiture4)
+parc.sortir_voiture(voiture1)
+parc.sortir_voiture(voiture2)
+parc.sortir_voiture(voiture2)
