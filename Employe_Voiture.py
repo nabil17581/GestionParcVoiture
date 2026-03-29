@@ -40,6 +40,10 @@ class Voiture:
     def afficher_info(self):
         print(f"marque : {self.marque}, modele : {self.modele},anne: {self.annee}"
               f",matricule: {self.matricule}, kilometrage: {self.kilometrage}")
+        if self.chauffeur is None:
+            print("Aucun chauffeur pour cette voiture")
+        else :
+            print(f"Chauffeur : {self.chauffeur.afficher_info()}")
 
 
 #instances Employe
@@ -54,3 +58,16 @@ V1=Voiture("GKL 9V1","Dodge", "Caravane",2018,171987)
 V2=Voiture("SMA P4O","Toyota","Sienna",2023,101679)
 V3=Voiture("JLC 99T","Honda","Odyssey",2016,220198)
 V4=Voiture("13L JS0","Ford","Transit","2021",167547)
+
+#Affichage des Informations
+print("----Liste Chaufffeurs----")
+E1.afficher_info()
+E2.afficher_info()
+E3.afficher_info()
+E4.afficher_info()
+print("----Liste Voitures----")
+V1.afficher_info()
+V2.afficher_info()
+V3.afficher_info()
+V4.afficher_info()
+
