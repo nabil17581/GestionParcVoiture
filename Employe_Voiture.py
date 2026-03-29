@@ -14,7 +14,7 @@ class Employe:
         if self.voiture_service is not None:
             print("Le Chauffeur a deja une voiture de service")
         elif voiture.chauffeur is not None:
-            print("La voiture est deja affecter a un chauffeur")
+            print("La voiture est deja affecter a  un autre chauffeur")
         else:
             self.voiture_service = voiture
             voiture.chauffeur = self
@@ -59,17 +59,7 @@ V2=Voiture("SMA P4O","Toyota","Sienna",2023,101679)
 V3=Voiture("JLC 99T","Honda","Odyssey",2016,220198)
 V4=Voiture("13L JS0","Ford","Transit","2021",167547)
 
-#Affichage des Informations
-"""print("----Liste Chaufffeurs----")
-E1.afficher_info()
-E2.afficher_info()
-E3.afficher_info()
-E4.afficher_info()
-print("----Liste Voitures----")
-V1.afficher_info()
-V2.afficher_info()
-V3.afficher_info()
-V4.afficher_info()"""
+
 
 #Ajout de voiture au chauffeur
 E1.ajouter_voiture(V2)
@@ -83,10 +73,25 @@ E3.afficher_info()"""
 
 #Retirer une voiture
 
-E1.retirer_voiture(V2)
+"""E1.retirer_voiture(V2)
 E3.retirer_voiture(V4)
 E2.retirer_voiture(V4)
-E4.retirer_voiture(V1)
+E4.retirer_voiture(V1)"""
+
+#Affichage des Informations
+print("----Liste Chaufffeurs----")
+E1.afficher_info()
+E2.afficher_info()
+E3.afficher_info()
+E4.afficher_info()
+print("----Liste Voitures----")
+V1.afficher_info()
+V2.afficher_info()
+V3.afficher_info()
+V4.afficher_info()
+
+
+E4.ajouter_voiture(V2)
 
 
 
