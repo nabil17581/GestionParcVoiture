@@ -5,7 +5,7 @@ class Employe:
         self.prenom=prenom
         self.voiture_service= None
     def afficher_info(self):
-        print(f"Nom : {self.nom}, Prenom : {self.prenom},num_permis : {self.num_permis}")
+        print(f"Nom : {self.nom}, Prenom : {self.prenom},Permis : {self.num_permis}")
         if self.voiture_service is None:
             print("Aucune voiture de service pour ce chauffeur")
         else :
@@ -42,4 +42,15 @@ class Voiture:
               f",matricule: {self.matricule}, kilometrage: {self.kilometrage}")
 
 
+#instances Employe
+E1=Employe("H1026-606590-09","Hafsi","Nabil")
+E2=Employe("A8937-598001-11","Aftis","Naser")
+E3=Employe("B1204-100453-06","Belhennich","Amine")
+E4=Employe("B5689-004587-10","Boussekine","Nordine")
 
+#instances Voiture
+
+V1=Voiture("GKL 9V1","Dodge", "Caravane",2018,171987)
+V2=Voiture("SMA P4O","Toyota","Sienna",2023,101679)
+V3=Voiture("JLC 99T","Honda","Odyssey",2016,220198)
+V4=Voiture("13L JS0","Ford","Transit","2021",167547)
