@@ -20,13 +20,14 @@ class Employe:
             voiture.chauffeur = self
 
     def retirer_voiture(self,voiture):
-        if self.voiture_service is not None:
+        if self.voiture_service is None:
+            print("aucune voiture n'est deja affecter")
+        elif self.voiture_service != voiture:
+            print("Cette voiture n'est pas affecter a ce chauffeur")
+        else :
             self.voiture_service = None
             voiture.chauffeur = None
             print("Voiture retirée")
-        else:
-            print("Aucune voiture attribué a ce chauffeur")
-
 
 class Voiture:
     def __init__(self,matricule,marque,modele,annee,kilometrage):
@@ -76,8 +77,22 @@ E2.ajouter_voiture(V4)
 E3.ajouter_voiture(V1)
 
 #Afficher les informations
-E1.afficher_info()
+"""E1.afficher_info()
 E2.afficher_info()
-E3.afficher_info()
+E3.afficher_info()"""
+
+#Retirer une voiture
+
+E1.retirer_voiture(V2)
+E3.retirer_voiture(V4)
+E2.retirer_voiture(V4)
+E4.retirer_voiture(V1)
+
+
+
+
+
+
+
 
 
