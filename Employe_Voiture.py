@@ -25,7 +25,16 @@ class Employe:
             voiture.chauffeur = None
             print("Voiture retirée")
         else:
-            print("Aucune voiture attribué a ce chaffeur")
+            print("Aucune voiture attribué a ce chauffeur")
 
+
+class Voiture:
+    def __init__(self,matricule,marque,modele,annee,kilometrage):
+        self.matricule=matricule
+        self.marque=marque
+        self.modele=modele
+        self.annee=annee
+        self.kilometrage=kilometrage
+        self.chauffeur = None
 
 
