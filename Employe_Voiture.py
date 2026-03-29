@@ -69,6 +69,7 @@ V1.afficher_info()
 V2.afficher_info()
 V3.afficher_info()
 V4.afficher_info()"""
+
 #Ajout de voiture au chauffeur
 E1.ajouter_voiture(V2)
 E2.ajouter_voiture(V4)
@@ -76,6 +77,7 @@ E3.ajouter_voiture(V1)
 
 #Afficher les informations
 E1.afficher_info()
-
+E2.afficher_info()
+E3.afficher_info()
 
 
