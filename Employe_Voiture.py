@@ -9,7 +9,7 @@ class Employe:
         if self.voiture_service is None:
             print("Aucune voiture de service pour ce chauffeur")
         else :
-            print(f"Voiture service : {self.voiture_service.afficher_info()}")
+            print(f"Voiture service : {self.voiture_service.matricule}")
     def ajouter_voiture(self,voiture):
         if self.voiture_service is not None:
             print("Le Chauffeur a deja une voiture de service")
@@ -43,8 +43,7 @@ class Voiture:
         if self.chauffeur is None:
             print("Aucun chauffeur pour cette voiture")
         else :
-            print(f"Chauffeur : {self.chauffeur.afficher_info()}")
-
+            print(f"Chauffeur : {self.chauffeur.nom},{self.chauffeur.prenom},{self.chauffeur.num_permis}")
 
 #instances Employe
 E1=Employe("H1026-606590-09","Hafsi","Nabil")
@@ -60,7 +59,7 @@ V3=Voiture("JLC 99T","Honda","Odyssey",2016,220198)
 V4=Voiture("13L JS0","Ford","Transit","2021",167547)
 
 #Affichage des Informations
-print("----Liste Chaufffeurs----")
+"""print("----Liste Chaufffeurs----")
 E1.afficher_info()
 E2.afficher_info()
 E3.afficher_info()
@@ -69,5 +68,14 @@ print("----Liste Voitures----")
 V1.afficher_info()
 V2.afficher_info()
 V3.afficher_info()
-V4.afficher_info()
+V4.afficher_info()"""
+#Ajout de voiture au chauffeur
+E1.ajouter_voiture(V2)
+E2.ajouter_voiture(V4)
+E3.ajouter_voiture(V1)
+
+#Afficher les informations
+E1.afficher_info()
+
+
 
